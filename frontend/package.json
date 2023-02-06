@@ -1,34 +1,50 @@
 {
-  "name": "frontend",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "bootstrap": "^4.4.1",
-    "ethers": "^5.4.7",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "react-scripts": "5.0.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "name": "descrow",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@huddle01/huddle01-client": "^0.0.10",
+        "@rainbow-me/rainbowkit": "^0.8.1",
+        "@testing-library/jest-dom": "^5.16.1",
+        "@testing-library/react": "^13.3.0",
+        "@testing-library/user-event": "^13.5.0",
+        "@types/jest": "^27.0.3",
+        "@types/node": "^16.11.14",
+        "@types/react": "^18.0.17",
+        "@types/react-dom": "^18.0.6",
+        "@web3modal/ethereum": "^2.1.1",
+        "@web3modal/react": "^2.1.1",
+        "daisyui": "^2.50.0",
+        "ethers": "^5.7.2",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.2.1",
+        "react-scripts": "5.0.1",
+        "wagmi": "^0.11.4",
+        "web-vitals": "^2.1.2"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.8",
+        "postcss": "^8.4.16",
+        "tailwindcss": "^3.1.8"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {},
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
 }
