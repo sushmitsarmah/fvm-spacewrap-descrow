@@ -1,9 +1,9 @@
 import { Player } from '@livepeer/react';
  
 const playbackId =
-  'bafybeida3w2w7fch2fy6rfvfttqamlcyxgd3ddbf4u25n7fxzvyvcaegxy';
+  '0b2by6taosbwlnhj';
  
-import Pikachu from './pikachu.jpeg';
+import Pikachu from './banker.png';
  
 const PosterImage = () => {
   return (
