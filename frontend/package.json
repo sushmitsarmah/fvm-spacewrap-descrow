@@ -6,8 +6,6 @@
         "@huddle01/huddle01-client": "^0.0.10",
         "@lighthouse-web3/sdk": "^0.1.12",
         "@livepeer/react": "^2.1.5",
-        "@pushprotocol/restapi": "^0.3.2",
-        "@pushprotocol/uiweb": "^0.4.1",
         "@rainbow-me/rainbowkit": "^0.8.1",
         "@testing-library/jest-dom": "^5.16.1",
         "@testing-library/react": "^13.3.0",
