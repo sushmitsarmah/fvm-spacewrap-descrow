@@ -5,7 +5,14 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import "./global.css";
 import { HuddleClientProvider, getHuddleClient } from '@huddle01/huddle01-client';
-import { HUDDLE_API_KEY } from "./config";
+import { HUDDLE_API_KEY, LIVEPEER_KEY } from "./config";
+
+import {
+  LivepeerConfig,
+  ThemeConfig,
+  createReactClient,
+  studioProvider,
+} from '@livepeer/react';
 
 import '@rainbow-me/rainbowkit/styles.css';
 
@@ -17,6 +24,22 @@ import { configureChains, createClient, WagmiConfig } from 'wagmi';
 import { mainnet, polygon, optimism, arbitrum } from 'wagmi/chains';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
+
+const livepeerClient = createReactClient({
+  provider: studioProvider({
+    apiKey: LIVEPEER_KEY,
+  }),
+});
+
+const theme = {
+  colors: {
+    accent: 'rgb(0, 145, 255)',
+    containerBorderColor: 'rgba(0, 145, 255, 0.9)',
+  },
+  fonts: {
+    display: 'Inter',
+  },
+};
 
 
 const { chains, provider } = configureChains(
@@ -47,9 +70,13 @@ root.render(
   <BrowserRouter>
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider chains={chains}>
-        <HuddleClientProvider client={huddleClient} >
-          <App huddleClient={huddleClient} />
-        </HuddleClientProvider>
+        <LivepeerConfig client={livepeerClient} theme={theme}>
+
+          <HuddleClientProvider client={huddleClient} >
+            <App huddleClient={huddleClient} />
+          </HuddleClientProvider>
+        </LivepeerConfig>
+
       </RainbowKitProvider>
     </WagmiConfig>
   </BrowserRouter>

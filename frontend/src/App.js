@@ -10,6 +10,9 @@ import Feature2Marketplace from "./pages/Feature2Marketplace";
 import Feature1Contracts from "./pages/Feature1Contracts";
 import { useEffect } from "react";
 import { ConnectButton } from '@rainbow-me/rainbowkit';
+// import Notifications from "./pages/Notifications";
+import TermsConditions from "./pages/TermsConditions";
+import LiveVideo from "./pages/LiveVideo";
 
 function App({ huddleClient }) {
   const action = useNavigationType();
@@ -40,6 +43,10 @@ function App({ huddleClient }) {
         metaDescription = "";
         break;
       case "/contracts":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/notifications":
         title = "";
         metaDescription = "";
         break;
@@ -75,6 +82,9 @@ function App({ huddleClient }) {
       <Route path="/marketplace" element={<Feature2Marketplace />} />
 
       <Route path="/contracts" element={<Feature1Contracts />} />
+      {/* <Route path="/notifications" element={<Notifications />} /> */}
+      <Route path="/terms-conditions" element={<TermsConditions />} />
+      <Route path="/walkthrough" element={<LiveVideo />} />
     </Routes>
     </>
 

@@ -42,6 +42,8 @@ const VideoCallApplication = ({ huddleClient }) => {
         <a href="/agreement">Contract Agreement</a>
         <a href="/contracts">Contracts</a>
         <a href="/marketplace">Marketplace</a>
+          <a href="/terms-conditions">Terms and Conditions</a>
+          <a href="/walkthrough">Site Walkthrough</a>
       </div>
       <div className="left-[40px] shadow-[0px_8px_32px_rgba(35,_36,_39,_0.2),_0px_16px_80px_rgba(29,_30,_32,_0.4)] w-[1360px] h-[960px] overflow-hidden flex flex-row items-start justify-start">
         <div className="relative bg-black w-80 h-[960px] shrink-0 overflow-hidden">

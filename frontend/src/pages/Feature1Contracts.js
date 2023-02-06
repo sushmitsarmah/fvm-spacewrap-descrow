@@ -82,6 +82,8 @@ const Feature1Contracts = () => {
           <a href="/agreement">Contract Agreement</a>
           <a href="/contracts">Contracts</a>
           <a href="/marketplace">Marketplace</a>
+          <a href="/terms-conditions">Terms and Conditions</a>
+          <a href="/walkthrough">Site Walkthrough</a>
           {/* <img
             className="relative w-[30px] h-[30px] shrink-0 object-cover"
             alt=""

@@ -86,6 +86,8 @@ const Feature2Marketplace = () => {
           <a href="/agreement">Contract Agreement</a>
           <a href="/contracts">Contracts</a>
           <a href="/marketplace">Marketplace</a>
+          <a href="/terms-conditions">Terms and Conditions</a>
+          <a href="/walkthrough">Site Walkthrough</a>
         </div>
         <img
           className="absolute top-[15px] left-[1107.78px] w-[18.66px] h-[20.75px] object-cover"
